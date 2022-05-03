@@ -1,0 +1,23 @@
+@import '../../constants/styles/colors.scss';
+
+.container-description{
+  grid-column: 1 / 3;
+  grid-row: 2;
+}
+
+.description-title{
+  margin-bottom: 1rem;
+  color: $black;
+}
+
+.description{
+  font-size: .8rem;
+  color: $black;
+}
+
+@media (max-width: 900px){
+  .container-description {
+    grid-column: 1/3;
+    grid-row: 3;
+}
+}

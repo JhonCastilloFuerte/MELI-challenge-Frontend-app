@@ -1,0 +1,29 @@
+@import '../../constants/styles/colors.scss';
+
+.product-item{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem;
+  gap: 1rem;
+  transition: box-shadow .2s ease-in-out,-webkit-box-shadow .2s ease-in-out;
+}
+
+.product-item:hover{
+  box-shadow: 0 0 1px 1px rgb(0 0 0 / 7%), 0 10px 15px 0 rgb(0 0 0 / 10%);
+}
+
+.information{
+  width: 50%;
+}
+
+.product-item img{
+  max-width: 90px;
+  max-height: 100px;
+  cursor: pointer;
+}
+
+.product-item a{
+  color: $link;
+}

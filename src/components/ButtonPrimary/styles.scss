@@ -1,0 +1,16 @@
+@import '../../constants/styles/colors.scss';
+
+.btn-payment{
+  width: 90%;
+  margin: 30px auto 0 auto;
+  padding: $btn-padding;
+  border-radius: 6px;
+  background-color: $link;
+  color: $white;
+  border-color: transparent;
+  transition: box-shadow .25s ease-out,background-color .2s ease-out,-webkit-box-shadow .25s ease-out;
+
+  &:hover{
+    background-color: $link-hover;
+  }
+}

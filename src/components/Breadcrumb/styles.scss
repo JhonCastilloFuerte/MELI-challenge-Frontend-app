@@ -1,0 +1,37 @@
+@import '../../constants/styles/colors.scss';
+
+.container-breadcrum{
+  max-width: 80%;
+  margin: 10px auto;
+}
+
+.breadcrum-item{
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.breadcrum-item span{
+  color: $breadcrum;
+  transition: all .4s;
+  font-size: 14px;
+
+  &:hover{
+    color: $black;
+  }
+}
+
+.breadcrum-item::after{
+  content: '>';
+  margin-left: 10px;
+  color: $breadcrum;
+  transition: all .4s;
+
+  &:hover{
+    color: $black;
+  }
+}
+
+.breadcrum-item:last-of-type::after{
+  content: none;
+}
