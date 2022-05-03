@@ -1,4 +1,4 @@
-import { Breadcrumn, ItemsList } from "../../../components"
+import { Breadcrumb, ItemsList } from "../../../components"
 import { Navigate, useSearchParams } from 'react-router-dom';
 import { useState ,useEffect } from 'react';
 import { getItems } from '../../../api/resources/items/index';
@@ -25,11 +25,11 @@ const ProductsListView = () => {
     return <Navigate to='/'/>
 
   const [productsInfo, setProductsInfo] = useState(PRODUCTS);
-  const [breadcrumnData, setBreadcrumData] = useState([]);
+  const [breadcrumbData, setBreadcrumbData] = useState([]);
 
   const getItemsAPI = async (q: string = '') =>{
     const {data} = await getItems({q});
-    setBreadcrumData(data.categories);
+    setBreadcrumbData(data.categories);
     console.log(data.items);
     const resp = data.items.map((item:any) =>{
       return{
@@ -57,8 +57,8 @@ const ProductsListView = () => {
 
   return (
     <>
-      <Breadcrumn
-        items={breadcrumnData}
+      <Breadcrumb
+        items={breadcrumbData}
       />
       <ItemsList 
         productsInfo={productsInfo}

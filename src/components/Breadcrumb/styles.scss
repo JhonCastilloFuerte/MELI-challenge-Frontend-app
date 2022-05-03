@@ -1,17 +1,17 @@
 @import '../../constants/styles/colors.scss';
 
-.container-breadcrum{
+.container-breadcrumb{
   max-width: 80%;
   margin: 10px auto;
 }
 
-.breadcrum-item{
+.breadcrumb-item{
   cursor: pointer;
   display: inline-block;
   margin-right: 1rem;
 }
 
-.breadcrum-item span{
+.breadcrumb-item span{
   color: $breadcrum;
   transition: all .4s;
   font-size: 14px;
@@ -21,7 +21,7 @@
   }
 }
 
-.breadcrum-item::after{
+.breadcrumb-item::after{
   content: '>';
   margin-left: 10px;
   color: $breadcrum;
@@ -32,6 +32,6 @@
   }
 }
 
-.breadcrum-item:last-of-type::after{
+.breadcrumb-item:last-of-type::after{
   content: none;
 }

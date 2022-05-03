@@ -4,7 +4,7 @@ const cors = require('cors')
 
 const PORT = 4000;
 
-// Crearing server
+// Creating server
 const app = express();
 
 // CORS
@@ -12,7 +12,7 @@ app.use(cors());
 
 // Listening 
 app.listen(PORT, () =>{
-  console.log(`Servidor corriendo en: ${PORT}`)
+  console.log(`Server running on port: ${PORT}`)
 })
 
 

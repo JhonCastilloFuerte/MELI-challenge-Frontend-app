@@ -7,7 +7,7 @@ import ProductImages from "./ProductImages/ProductImages";
 import ProductsListItem from "./ProductsListItem/ProductsListItem";
 import PurchaseInformation from "./PurchaseInformation/PurchaseInformation";
 import SearchBar from "./SearchBar/SearchBar";
-import Breadcrumn from "./Breadcrumb/Breadcrumb";
+import Breadcrumb from "./Breadcrumb/Breadcrumb";
 
 export {
   ButtonPrimary,
@@ -19,5 +19,5 @@ export {
   ProductsListItem,
   PurchaseInformation,
   SearchBar,
-  Breadcrumn
+  Breadcrumb
 }

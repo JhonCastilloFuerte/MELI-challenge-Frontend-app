@@ -6,14 +6,14 @@ interface IPROPS{
   items: string[]
 }
 
-const Breadcrumn = ({items = ['']} : IPROPS) => {
+const Breadcrumb = ({items = ['']} : IPROPS) => {
   return (
-    <ul className='container-breadcrum'>
+    <ul className='container-breadcrumb'>
         {
           items.map((breadcrum)=>{
             return (
             <li
-              className='breadcrum-item'
+              className='breadcrumb-item'
               key={breadcrum}>
                 <span>{breadcrum}</span>
             </li>)
@@ -23,4 +23,4 @@ const Breadcrumn = ({items = ['']} : IPROPS) => {
   )
 }
 
-export default Breadcrumn
+export default Breadcrumb
